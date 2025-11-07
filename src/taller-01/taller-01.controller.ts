@@ -1,23 +1,23 @@
 import { Taller01Type } from "./taller-01.model"
-import convertidorTempAction from "./actions/convertidorTemp.action"
-import resolvedorAction from "./actions/resolvedor.action"
-import mejorParidadAction from "./actions/mejorParidad.action"
-import peorParidadAction from "./actions/peorParidad.action"
+import convertidorTempAction from "./taller-01.actions/convertidorTemp.action"
+import resolvedorAction from "./taller-01.actions/resolvedor.action"
+import mejorParidadAction from "./taller-01.actions/mejorParidad.action"
+import peorParidadAction from "./taller-01.actions/peorParidad.action"
 
 async function convertidorTemp(tempc: number): Promise<Taller01Type> {
-  return await convertidorTempAction(tempc);
+  return await convertidorTempAction(tempc)
 }
 
 async function resolvedor(a: number, b: number, c: number, signo: boolean): Promise<Taller01Type> {
-  return await resolvedorAction(a, b, c, signo);
+  return await resolvedorAction(a, b, c, signo)
 }
 
 async function mejorParidad(x: number): Promise<Taller01Type> {
-  return await mejorParidadAction(x);
+  return await mejorParidadAction(x)
 }
 
 async function peorParidad(x: number): Promise<Taller01Type> {
-  return await peorParidadAction(x);
+  return await peorParidadAction(x)
 }
 
-export { convertidorTemp, resolvedor, mejorParidad, peorParidad };
+export { convertidorTemp, resolvedor, mejorParidad, peorParidad }

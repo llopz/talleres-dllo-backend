@@ -1,5 +1,5 @@
 type Taller01Type = {
-  resultado?: number | boolean;
-};
+  resultado?: number | boolean
+}
 
-export { Taller01Type };
+export { Taller01Type }

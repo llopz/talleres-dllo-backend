@@ -1,13 +1,13 @@
-import { model, Schema } from "mongoose";
+import { model, Schema } from "mongoose"
 
 // DECLARE MODEL TYPE
-type UserType = {};
+type UserType = {}
 
 // DECLARE MONGOOSE SCHEMA
-const UserSchema = new Schema<UserType>({});
+const UserSchema = new Schema<UserType>({})
 
 // DECLARE MONGO MODEL
-const UserModel = model<UserType>("User", UserSchema);
+const UserModel = model<UserType>("User", UserSchema)
 
 // EXPORT ALL
-export { UserModel, UserSchema, UserType };
+export { UserModel, UserSchema, UserType }
