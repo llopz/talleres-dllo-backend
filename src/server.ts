@@ -3,7 +3,6 @@ import cors from "cors"
 import express from "express"
 
 // API ROUTES IMPORTS
-import userRoutes from "./user/v1/user.routes"
 import taller01Routes from "./taller-01/taller-01.routes"
 import taller02Routes from "./taller-02/taller-02.routes"
 
@@ -16,7 +15,6 @@ app.use(express.json())
 // ROUTES
 const SERVER_VERSION = "/api/v1/"
 
-app.use(SERVER_VERSION + "users", userRoutes)
 app.use(SERVER_VERSION + "taller-01", taller01Routes)
 app.use(SERVER_VERSION + "taller-02", taller02Routes)
 
