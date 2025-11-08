@@ -5,6 +5,7 @@ import express from "express"
 // API ROUTES IMPORTS
 import taller01Routes from "./taller-01/taller-01.routes"
 import taller02Routes from "./taller-02/taller-02.routes"
+import taller03Routes from "./taller-03/taller-03.routes"
 
 // MIDDLEWARES
 const app = express()
@@ -17,6 +18,7 @@ const SERVER_VERSION = "/api/v1/"
 
 app.use(SERVER_VERSION + "taller-01", taller01Routes)
 app.use(SERVER_VERSION + "taller-02", taller02Routes)
+app.use(SERVER_VERSION + "taller-03", taller03Routes)
 
 // FALLBACKS
 

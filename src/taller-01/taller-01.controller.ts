@@ -1,8 +1,9 @@
-import { Taller01Type } from "./taller-01.model"
-import convertidorTempAction from "./taller-01.actions/convertidorTemp.action"
-import resolvedorAction from "./taller-01.actions/resolvedor.action"
-import mejorParidadAction from "./taller-01.actions/mejorParidad.action"
-import peorParidadAction from "./taller-01.actions/peorParidad.action"
+import convertidorTempAction from "./actions/convertidorTemp.action"
+import resolvedorAction from "./actions/resolvedor.action"
+import mejorParidadAction from "./actions/mejorParidad.action"
+import peorParidadAction from "./actions/peorParidad.action"
+
+type Taller01Type = number | boolean
 
 async function convertidorTemp(tempc: number): Promise<Taller01Type> {
   return await convertidorTempAction(tempc)

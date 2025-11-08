@@ -1,9 +1,9 @@
-import findMaxAction from "./taller-02.actions/findMax.action"
-import findMinAction from "./taller-02.actions/findMin.action"
-import includesAction from "./taller-02.actions/includes.action"
-import sumAction from "./taller-02.actions/sum.action"
-import missingNumbersAction from "./taller-02.actions/missingNumbers.action"
-import { Taller02Type } from "./taller-02.model"
+import findMaxAction from "./actions/findMax.action"
+import findMinAction from "./actions/findMin.action"
+import includesAction from "./actions/includes.action"
+import sumAction from "./actions/sum.action"
+import missingNumbersAction from "./actions/missingNumbers.action"
+type Taller02Type = number | number[] | boolean | null
 
 async function findMax(list: number[]): Promise<Taller02Type> {
   return await findMaxAction(list)
